@@ -1,0 +1,55 @@
+* {
+    color: silver
+}
+body {
+    background-color:black
+}
+header {
+    font-family: 'Cormorant Unicase', serif;
+    display: flex;
+    border-style:double;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    border-color: red;
+    border-width: 10px;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 38px;
+}
+.forecast{
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+    border-style: outset;
+    border-width: thick;
+    border-top-color: red;
+    border-right-color: red;
+    width: 90%;
+    height: 400px;
+    margin-left: 38px;
+}
+.search {
+    color: black;
+    box-sizing: border-box;
+    height: 15px;
+    width: 35%;
+}
+.btn {
+    color: red;
+    /* background-color: silver; */
+    border-style: double;
+    border-top-style: hidden;
+    border-width: thick;
+    border-color: red;
+    
+}
+.form-control {
+    background-color: silver;
+}
+.search-history {
+    box-sizing: border-box;
+    border-style: double;
+    border-width: thin;
+    border-color: red;
+    margin-top: 45px;
+}
