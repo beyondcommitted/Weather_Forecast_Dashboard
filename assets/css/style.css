@@ -1,5 +1,5 @@
 * {
-    color: silver
+    color: silver;
 }
 body {
     background-color:black
@@ -32,7 +32,7 @@ header {
     color: black;
     box-sizing: border-box;
     height: 15px;
-    width: 35%;
+    width: 15%;
 }
 .btn {
     color: red;
@@ -46,10 +46,21 @@ header {
 .form-control {
     background-color: silver;
 }
-.search-history {
+.history {
     box-sizing: border-box;
+    height: 250px; 
+    width: 20%;
     border-style: double;
     border-width: thin;
-    border-color: red;
+    border-color: white;
+    margin-top: 45px;
+}
+.currentCity {
+    box-sizing: border-box;
+    height: 250px; 
+    width: 40%;
+    border-style: double;
+    border-width: thin;
+    border-color: white;
     margin-top: 45px;
 }
