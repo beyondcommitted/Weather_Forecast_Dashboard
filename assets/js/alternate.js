@@ -110,3 +110,74 @@ clearHistoryBtn.addEventListener("click", function () {
   renderSearchHistory();
 });
 // getWeather("");
+
+// function buildDashboard(data) {
+//     var currentDate = new Date(data.current.dt * 1000);
+//     console.log(currentDate);
+//     var day = currentDate.getDate();
+//     var month = currentDate.getMonth() + 1;
+//     var year = currentDate.getFullYear();
+//     var currentTemperature = document.querySelector("#temp");
+// var currentHumidity = document.querySelector("#humidity");
+// var currentUvi = document.querySelector("#uvi");
+// var searchBtn = document.querySelector("#searchBtn");
+// var clearHistoryBtn = document.querySelector("#clearHistoryBtn");
+// searchedCity.innerHTML += " (" + month + "/" + day + "/" + year + ") ";
+// currentTemperature.innerHTML =
+// "Temperature: " + tempConversion(data.current.temp) + " F";
+// currentHumidity.innerHTML = "Humidity: " + data.current.humidity + " %";
+// currentUvi.innerHTML = "UV Index: " + data.current.uvi;
+// var cityForecast=document.querySelector("#forecast");
+// cityForecast.innerHTML="";
+// for(i=0; i< 5; i++){
+//   var forecastIndex = data.daily[i];  
+//   console.log(forecastIndex);
+//   cityForecast.append(buildForecast(forecastIndex))
+// }
+// function buildForecast(forecast){
+//     var col =document.createElement("div");
+//     col.classList.add("col");
+//     var forecastContainer =document.createElement("div");
+//     forecastContainer.classList.add("big-primary", "rounded", "p-5");
+//     // var img = document.createElement("img");
+//     // img.setAttribute("src", forecast.url);
+//     var forecastDate = new Date(data.daily[i].dt*1000);
+//     console.log(forecastDate);
+//     var forecastDay = forecastDate.getDate();
+//     var forecastMonth = forecastDate.getMonth() + 1;
+//     var forecastYear = forecastDate.getFullYear();
+//     var forecastDate=document.createElement("h4");
+//     forecastDate.textContent= forecast.forecastDate;
+//     // forecast.setAttribute();
+//     forecastDate.innerHTML = forecastMonth + "/" + forecastDay + "/" + forecastYear;
+//     var forecastTemp = document.createElement("p");
+//     //   temp.textContent= forecast.temp;
+//     forecastTemp.innerHTML = "Temp: " + tempConversion(data.daily[i].temp.day)  + " F";
+//     console.log(data.daily[i].temp);
+//     console.log(tempConversion(data.daily[i].temp.day));
+//     var forecastHumidity = document.createElement("p");
+//     forecastHumidity.innerHTML = "Humidity: " + (data.daily[i].humidity) + "%";
+//     forecastContainer.append(forecastDate, forecastTemp, forecastHumidity);
+//     // col.innerHTML="";
+//     col.append(forecastContainer);
+//     return col;
+// }
+// }             
+// }
+// // }
+// var searchHistory = JSON.parse(localStorage.getItem("search")) || [];
+// console.log(searchHistory);
+// rendercitiesCached();
+// searchBtn.addEventListener("click", function (e) {
+// var searchCity = searchEl.value;
+// searchCityWeather(searchCity);
+// searchHistory.push(searchCity);
+// rendercitiesCached();
+// localStorage.setItem("search", JSON.stringify(searchHistory));
+// });
+// clearHistoryBtn.addEventListener("click", function(){
+// localStorage.clear();
+// searchHistory=[];
+// citiesCached.innerHTML="";
+// }) 
+// // searchCityWeather("");
