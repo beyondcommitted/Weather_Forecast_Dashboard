@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Weather App</title>
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap" rel="stylesheet">
+
+    <title>Forecast</title>
 </head>
 <body>
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Weather Forecast Dashboard</h1>
-          <p class="lead">Want know toddays weather? Well, how about the 5 days following as well?</p>
-        </div>
+        <header class="container">
+          <h1>Weather Forecast Dashboard</h1>
+          <p class="lead">Want know today's weather? Well, how about the 5 days following as well?</p>
+        </header>
       </div>
       <nav class="navbar navbar-light bg-light">
         <div class="form-inline">
           <input class="form-control mr-sm-2" 
-          id="city-name" 
-          type="search" 
+          id="cityName" 
+          type="search"
           placeholder="Request City" 
           aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" 
           id="searchButton" 
-          type="submit">Search</button>
+          type="click">Search</button>
           <button class="btn btn-outline-success mb-3" 
-          id="clearHistoryBtn" 
-          type="submit">Clear History</button>
+          id="resetButton" 
+          type="click">Reset</button>
           <div id="history">  
           </div>
         </div>
@@ -39,7 +43,7 @@
             <div class="col-10">
                 <div class="rowTemp">
                 <div class="col-12">
-                <span id="temp"></span>    
+                <span id="temperature"></span>    
                 </div>
                 </div>
                 <div class="col-10">
@@ -48,18 +52,18 @@
                     <span id="humidity"></span>    
                     </div>
                     </div>
-                    <div class="col-10">
+                    <div class="present-day col-10">
                         <div class="rowUv">
                         <div class="col-12">
-                        <span id="uvi"></span>    
+                        <span id="uvIndex"></span>    
                         </div>
                         </div>
-        </div>
+                      </div>
 </div>
 </div>
 </form>
 <div id="citiesCached"></div>
-<div class="forecastContainer">
+<div class="weatherContainer">
     <div class="col-md-4">
     </div>
         <div class="col-md-8">

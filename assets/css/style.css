@@ -1,10 +1,10 @@
-* {
-    color: silver;
-}
+
 body {
-    background-color:black
+    color:red;
+    background-color: black;
 }
-header {
+.container {
+    color: silver;
     font-family: 'Cormorant Unicase', serif;
     display: flex;
     border-style:double;
@@ -15,6 +15,15 @@ header {
     width: 60%;
     margin-top: 30px;
     margin-left: 38px;
+}
+.present-day {
+    color: red;
+    border-style: solid;
+    border-color:black;
+}
+h1 {
+    color:silver;
+    font-family: 'Cormorant Unicase', serif;
 }
 .forecast{
     box-sizing: border-box;
@@ -28,12 +37,6 @@ header {
     height: 400px;
     margin-left: 38px;
 }
-.search {
-    color: black;
-    box-sizing: border-box;
-    height: 15px;
-    width: 15%;
-}
 .btn {
     color: red;
     /* background-color: silver; */
@@ -45,22 +48,4 @@ header {
 }
 .form-control {
     background-color: silver;
-}
-.history {
-    box-sizing: border-box;
-    height: 250px; 
-    width: 20%;
-    border-style: double;
-    border-width: thin;
-    border-color: white;
-    margin-top: 45px;
-}
-.currentCity {
-    box-sizing: border-box;
-    height: 250px; 
-    width: 40%;
-    border-style: double;
-    border-width: thin;
-    border-color: white;
-    margin-top: 45px;
 }
