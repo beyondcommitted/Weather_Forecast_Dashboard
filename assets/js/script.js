@@ -7,7 +7,6 @@ var searchEl = document.querySelector("#cityName");
 var searchedCity = document.querySelector("#searchedCity");
 var citiesCached = document.querySelector("#citiesCached");
 
-
 // converts kelvin to farenheight
 function tempConversion(K) {
   return Math.floor((K - 273.15) * 1.8 + 32);

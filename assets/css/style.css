@@ -1,51 +1,49 @@
-
 body {
-    color:red;
-    background-color: black;
+  color: red;
+  background-color: black;
 }
 .container {
-    color: silver;
-    font-family: 'Cormorant Unicase', serif;
-    display: flex;
-    border-style:double;
-    border-bottom-style: hidden;
-    border-left-style: hidden;
-    border-color: red;
-    border-width: 10px;
-    width: 60%;
-    margin-top: 30px;
-    margin-left: 38px;
+  color: silver;
+  font-family: "Cormorant Unicase", serif;
+  display: flex;
+  border-style: double;
+  border-bottom-style: hidden;
+  border-left-style: hidden;
+  border-color: red;
+  border-width: 10px;
+  width: 60%;
+  margin-top: 30px;
+  margin-left: 38px;
 }
 .present-day {
-    color: red;
-    border-style: solid;
-    border-color:black;
+  color: red;
+  border-style: solid;
+  border-color: black;
 }
 h1 {
-    color:silver;
-    font-family: 'Cormorant Unicase', serif;
+  color: silver;
+  font-family: "Cormorant Unicase", serif;
 }
-.forecast{
-    box-sizing: border-box;
-    display:flex;
-    flex-wrap: wrap;
-    border-style: outset;
-    border-width: thick;
-    border-top-color: red;
-    border-right-color: red;
-    width: 90%;
-    height: 400px;
-    margin-left: 38px;
+.forecast {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  border-style: outset;
+  border-width: thick;
+  border-top-color: red;
+  border-right-color: red;
+  width: 90%;
+  height: 400px;
+  margin-left: 38px;
 }
 .btn {
-    color: red;
-    /* background-color: silver; */
-    border-style: double;
-    border-top-style: hidden;
-    border-width: thick;
-    border-color: red;
-    
+  color: red;
+  /* background-color: silver; */
+  border-style: double;
+  border-top-style: hidden;
+  border-width: thick;
+  border-color: red;
 }
 .form-control {
-    background-color: silver;
+  background-color: silver;
 }
