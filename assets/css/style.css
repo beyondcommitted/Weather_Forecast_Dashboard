@@ -15,7 +15,7 @@ body {
   margin-top: 30px;
   margin-left: 38px;
 }
-.present-day {
+.present {
   color: red;
   border-style: solid;
   border-color: black;
@@ -24,10 +24,11 @@ h1 {
   color: silver;
   font-family: "Cormorant Unicase", serif;
 }
-.forecast {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
+.weatherContainer {
+  /* box-sizing: border-box; */
+  display:flex;
+  justify-content: center;
+  
   border-style: outset;
   border-width: thick;
   border-top-color: red;
@@ -35,10 +36,15 @@ h1 {
   width: 90%;
   height: 400px;
   margin-left: 38px;
+  overflow:auto;
+}
+#forecast div {
+  border-style: double;
+  border-color: white;
+  width: 105px;
 }
 .btn {
   color: red;
-  /* background-color: silver; */
   border-style: double;
   border-top-style: hidden;
   border-width: thick;

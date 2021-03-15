@@ -34,35 +34,40 @@ function searchCityWeather(city) {
         .then(function (onecallData) {
           weatherDashboard(onecallData);
         });
-    });
+    })};
   function weatherDashboard(data) {
     var today = new Date(data.current.dt * 1000);
     var day = today.getDate();
     var month = today.getMonth() + 1;
     var year = today.getFullYear();
-    var presentTemperature = document.querySelector("#temperature");
+
+
+    var cityTemperature = document.querySelector("#temperature");
     var presentHumidity = document.querySelector("#humidity");
-    var currentUvi = document.querySelector("#uvIndex");
+    var uvIndex = document.querySelector("#uvIndex");
     var searchButton = document.querySelector("#searchButton");
     var resetButton = document.querySelector("#resetButton");
+
+
     searchedCity.innerHTML += ": " + month + "-" + day + "-" + year;
-    presentTemperature.innerHTML =
-      "Temp: " + tempConversion(data.current.temp) + " °F";
+    cityTemperature.innerHTML = "Temp: " + tempConversion(data.current.temp) + " °F";
     presentHumidity.innerHTML = "Humidity: " + data.current.humidity + " %";
-    currentUvi.innerHTML = "UV-Index: " + data.current.uvi;
-    var cityForecast = document.querySelector("#forecast");
-    cityForecast.innerHTML = "";
-    for (i = 0; i < 5; i++) {
+    uvIndex.innerHTML = "UV-Index: " + data.current.uvi;
+
+
+    var searchedForecast = document.querySelector("#forecast");
+    searchedForecast.innerHTML = "";
+    for (i = 1; i < 6; i++) {
       var forecastIndex = data.daily[i];
-      console.log(forecastIndex);
-      cityForecast.append(fiveDayForecast(forecastIndex));
-    }
+      searchedForecast.append(fiveDayForecast(forecastIndex));
+    }}
 
     function fiveDayForecast(forecast) {
-      var col = document.createElement("div");
-      col.classList.add("col");
+      var forecast5 = document.createElement("div");
+      forecast5.classList.add("col");
+
       var weatherContainer = document.createElement("div");
-      weatherContainer.classList.add("big-primary", "rounded", "p-5");
+      weatherContainer.classList.add("big-primary", "p-5");
 
       //   Creates the icon images so they can be displayed to the page
       var image = document.createElement("img");
@@ -71,35 +76,36 @@ function searchCityWeather(city) {
         `http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`
       );
 
-      //   Date, temp and humidity
-      var presentDay = new Date(data.current.dt * 1000);
-      var upcomingDay = presentDay.getDate();
-      var presentMonth = presentDay.getMonth() + 1;
-      var presentYear = presentDay.getFullYear();
-      var presentDay = document.createElement("h4");
-      presentDay.textContent = forecast.presentDay;
-      presentDay.innerHTML =
-        presentMonth + "/" + upcomingDay + "/" + presentYear;
+      //   Date, temp and humidity of forecast
+      var dateOfForecast = new Date(forecast.dt * 1000);
+      var upcomingDay = dateOfForecast.getDate();
+      var presentMonth = dateOfForecast.getMonth() + 1;
+      var presentYear = dateOfForecast.getFullYear();
+
+      var dateOfForecastEl = document.createElement("p");
+      dateOfForecastEl.innerHTML = presentMonth + "-" + upcomingDay + "-" + presentYear;
+
       var displayedForecastTemp = document.createElement("p");
       displayedForecastTemp.innerHTML =
-        "Temp: " + tempConversion(data.current.temp) + " °F";
+        "Temp: " + tempConversion(forecast.temp.day) + " °F";
+
       var upcomingHumidity = document.createElement("p");
-      upcomingHumidity.innerHTML = "Humidity: " + data.daily[i].humidity + "%";
+      upcomingHumidity.innerHTML = "Humidity: " + forecast.humidity + "%";
 
       //   Dispalys the elements created on the page to be viewed
       weatherContainer.append(
-        presentDay,
+        dateOfForecastEl,
         displayedForecastTemp,
         image,
         upcomingHumidity
       );
       // places a div into the page
-      col.append(weatherContainer);
+      forecast5.append(weatherContainer);
       // dispalys formatted div
-      return col;
+      return forecast5;
     }
-  }
-}
+  
+
 // retrieves value from the local storage
 var searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 rendercitiesCached();
