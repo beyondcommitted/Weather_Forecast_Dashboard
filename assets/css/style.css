@@ -36,6 +36,9 @@ h1 {
   height: 90px;
   width: 160px
 }
+.center {
+  text-align: center;
+}
 .weatherContainer {
   text-align: center;
   border-style: outset;
