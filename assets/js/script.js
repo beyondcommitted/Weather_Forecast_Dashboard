@@ -47,14 +47,20 @@ function searchCityWeather(city) {
     var uvIndex = document.querySelector("#uvIndex");
     var searchButton = document.querySelector("#searchButton");
     var resetButton = document.querySelector("#resetButton");
-
+    var image = document.createElement("img");
+      image.setAttribute(
+        "src",
+        `http://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`
+      );
+      var currentWeather = document.querySelector(".current-weather");
+      currentWeather.append(image);
 
     searchedCity.innerHTML += ": " + month + "-" + day + "-" + year;
     cityTemperature.innerHTML = "Temp: " + tempConversion(data.current.temp) + " °F";
     presentHumidity.innerHTML = "Humidity: " + data.current.humidity + " %";
     uvIndex.innerHTML = "UV-Index: " + data.current.uvi;
 
-
+    
     var searchedForecast = document.querySelector("#forecast");
     searchedForecast.innerHTML = "";
     for (i = 1; i < 6; i++) {

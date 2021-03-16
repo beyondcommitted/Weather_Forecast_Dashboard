@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 body {
-  color: red;
+  color: white;
 }
 .container {
   color: silver;
@@ -31,10 +31,11 @@ h1 {
   font-family: "Cormorant Unicase", serif;
 }
 .current-weather {
+  color:red;
   border-style: double;
-  border-color: red;
-  height: 90px;
-  width: 160px
+  border-color: silver;
+  height: 180px;
+  width: 180px
 }
 .center {
   text-align: center;
