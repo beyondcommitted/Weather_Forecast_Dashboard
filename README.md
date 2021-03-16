@@ -26,6 +26,6 @@ WHEN user clicks on a city in the search history
 THEN user is again presented with current and future conditions for that city
 ```
 
-## Mock Updating
+## Mock Up
 
 ![Weather Forecast Dashboard Demo](Weather_Forecast_Dashboard\assets\images\Dashboard_Screenshot.png)
