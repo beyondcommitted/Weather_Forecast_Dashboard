@@ -28,4 +28,4 @@ THEN user is again presented with current and future conditions for that city
 
 ## Mock Up
 
-![Weather Forecast Dashboard Demo](Weather_Forecast_Dashboard\assets\images\Dashboard_Screenshot.png)
+![Weather Forecast Dashboard Demo](https://github.com/beyondcommitted/Weather_Forecast_Dashboard/blob/main/assets/images/Dashboard_Screenshot.png?raw=true)
