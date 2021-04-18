@@ -7,8 +7,8 @@ I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
 Below are the needed links to the submit this application to be graded:<br>
-https://github.com/beyondcommitted/Weather_Forecast_Dashboard <br>
-https://beyondcommitted.github.io/Weather_Forecast_Dashboard/index.html
+## [GitHub](https://github.com/beyondcommitted/Weather_Forecast_Dashboard) <br>
+## [Deployment](https://beyondcommitted.github.io/Weather_Forecast_Dashboard/index.html)
 
 
 ## Met Acceptance Criteria
